@@ -12,16 +12,17 @@ class ContaCorrente{
     sacar(valor){
         if(this._saldo >= valor){
             this._saldo -= valor;
+            return valor;
         }else{
             console.log("Saldo insuficiente")
         }
     }
 
     depositar(valor){
-        if(valor >0){
-            this._saldo += valor
-            console.log(this._saldo)
-        }
+        if(valor <= 0){
+                return;
+            }
+        this._saldo += valor;
     }
 }
 
@@ -39,7 +40,11 @@ cliente2.cpf = 03355545;// Define a propriedade 'cpf' do objeto 'cliente2' como 
 
 
 const contaCorrente = new ContaCorrente();
-contaCorrente.agincia = 1001; 
-contaCorrente.sacar(50);
+contaCorrente.agincia = 1001;
+
+contaCorrente.depositar(200);
+contaCorrente.depositar(-100);
+const valorSacado =  contaCorrente.sacar(50);
+console.log(valorSacado);
 
 console.log(contaCorrente);

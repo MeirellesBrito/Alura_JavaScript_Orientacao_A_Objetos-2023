@@ -3,7 +3,10 @@ import { Cliente } from "./Cliente.js";
 export class ContaCorrente{
     agincia; // Define a propriedade 'agincia'
     _cliente;
+    //#saldo "#"Atributo privado
+    _saldo = 0; // Define a propriedade 'saldo'
 
+    //--------Assessores----------
     set cliente(novoValor){
         if(novoValor instanceof Cliente){
             this._cliente = novoValor;
@@ -14,12 +17,22 @@ export class ContaCorrente{
         return this._cliente;
     }
 
-    //#saldo "#"Atributo privado
-    _saldo = 0; // Define a propriedade 'saldo'
-
+    
     get saldo(){
         return this._saldo
     }
+   //----------------------------
+
+   constructor(cliente, agincia){
+        this.cliente = cliente;
+        this.agincia = agincia; 
+   }
+
+
+
+
+
+
 
     sacar(valor){
         if(this._saldo >= valor){

@@ -1,6 +1,7 @@
     avaScript: programando a Orientação a Objetos
 -------------------------------------------------------
-
+método
+-------------------------------------------------------
 01 - Repeticao de codigo.
         Criando classes.
         O que são atributos.
@@ -24,4 +25,5 @@
         Alterando dinamicamente um objeto.
 
 04 - Acessando Atributos provados
+        instanceof
         

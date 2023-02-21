@@ -1,10 +1,25 @@
+import { Cliente } from "./Cliente.js";
+
 export class ContaCorrente{
     agincia; // Define a propriedade 'agincia'
-    cliente;
+    _cliente;
+
+    set cliente(novoValor){
+        if(novoValor instanceof Cliente){
+            this._cliente = novoValor;
+        }
+    }
+
+    get cliente(){
+        return this._cliente;
+    }
 
     //#saldo "#"Atributo privado
     _saldo = 0; // Define a propriedade 'saldo'
-    
+
+    get saldo(){
+        return this._saldo
+    }
 
     sacar(valor){
         if(this._saldo >= valor){

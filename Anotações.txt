@@ -2,6 +2,9 @@
 -------------------------------------------------------
 
 01 - Repeticao de codigo
-        Classe.
-        
+        Criando classes
+        O que são atributos
+        Instâcia/Objeto
+        Operador new    
+
 

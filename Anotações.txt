@@ -33,4 +33,7 @@ método
         Protegendo atributos sensíveis.
 
 05 - Construtores
-        
+        Construtores.
+        Encapsulamento.
+        Atributos "readonly".
+        Atributos estáticos.

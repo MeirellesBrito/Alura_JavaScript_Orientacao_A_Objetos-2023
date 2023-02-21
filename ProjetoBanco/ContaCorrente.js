@@ -1,6 +1,7 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente{
+    static numeroDeContas = 0;
     agincia; // Define a propriedade 'agincia'
     _cliente;
     //#saldo "#"Atributo privado
@@ -23,15 +24,12 @@ export class ContaCorrente{
     }
    //----------------------------
 
-   constructor(cliente, agincia){
-        this.cliente = cliente;
+   constructor(agincia,cliente){
         this.agincia = agincia; 
+        this.cliente = cliente;
+        ContaCorrente.numeroDeContas +=1;
+        
    }
-
-
-
-
-
 
 
     sacar(valor){

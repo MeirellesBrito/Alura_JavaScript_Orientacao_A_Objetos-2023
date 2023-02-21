@@ -1,10 +1,15 @@
     avaScript: programando a Orientação a Objetos
 -------------------------------------------------------
 
-01 - Repeticao de codigo
-        Criando classes
-        O que são atributos
-        Instâcia/Objeto
-        Operador new    
+01 - Repeticao de codigo.
+        Criando classes.
+        O que são atributos.
+        Instâcia/Objeto.
+        Operador new.
 
+02 - Adicioando comportamentos.
+        comportamentos de class.
+        Atributos privados.
+        this
+        
 

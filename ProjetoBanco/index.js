@@ -6,11 +6,12 @@ class Cliente{
 
 class ContaCorrente{
     agincia; // Define a propriedade 'agincia'
-    saldo; // Define a propriedade 'saldo'
+    //#saldo "#"Atributo privado
+    _saldo = 0; // Define a propriedade 'saldo'
 
     sacar(valor){
-        if(this.saldo >= valor){
-            this.saldo -= valor;
+        if(this._saldo >= valor){
+            this._saldo -= valor;
         }else{
             console.log("Saldo insuficiente")
         }
@@ -18,7 +19,8 @@ class ContaCorrente{
 
     depositar(valor){
         if(valor >0){
-            this.saldo += valor
+            this._saldo += valor
+            console.log(this._saldo)
         }
     }
 }
@@ -37,10 +39,7 @@ cliente2.cpf = 03355545;// Define a propriedade 'cpf' do objeto 'cliente2' como 
 
 
 const contaCorrente = new ContaCorrente();
-contaCorrente.saldo = 10000;
 contaCorrente.agincia = 1001; 
-
-contaCorrente.depositar(100);
 contaCorrente.sacar(50);
 
 console.log(contaCorrente);

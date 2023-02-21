@@ -19,7 +19,8 @@ const conta2 = new ContaCorrente();
 conta2.cliente = cliente2;
 conta2.agincia = 102;
 
-contaCorrente.tranferir(200, conta2);
-
+let valor = 200
+contaCorrente.tranferir(valor, conta2);
+console.log("valor: ", valor);
 console.log(conta2);
-console.log(contaCorrente);
+
